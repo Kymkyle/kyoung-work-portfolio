@@ -234,24 +234,24 @@ html, body {
 /* Buttons */
 .contact-me {
   padding: 0.75rem 1.5rem;
-  font-size: 1rem; 
-  border-radius: 50rem; 
-  margin-top: 1rem; 
+  font-size: 1rem;
+  border-radius: 50rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: 500;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  background-color: #00bcd4; 
+  background-color: #00bcd4;
   color: #fff;
   border: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  white-space: normal;
 }
-.contact-me :hover {
+.contact-me:hover {
   background-color: #066b79;
-  transform: scale(1.1, 1); /* stretch horizontally */
+  transform: scale(1.1, 1);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   animation: stretch 0.3s ease;
 }
-/* Keyframes for stretch animation */
 @keyframes stretch {
   0% { transform: scale(1, 1); }
   50% { transform: scale(1.15, 0.95); }
@@ -589,6 +589,15 @@ ul {
   .text-a {
     text-align: left !important;
     line-height: 24px;
+  }
+  .tech-right2 {
+    margin-top: -50px !important;
+  } 
+  .tech-right3 {
+    margin-top: 30px !important;
+  } 
+  .container.text-center::after {
+    margin-bottom: -320px;
   }
   .tag-line {
     font-size: 2.4rem;
