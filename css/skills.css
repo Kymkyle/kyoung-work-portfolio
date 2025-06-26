@@ -244,46 +244,262 @@ html, body {
   color: white;
 }
 /* Keep your original CSS here */
-/* Devices ≤ 1440px (tablets and smaller) */
-@media (max-width: 1440px) {
-  .image-profile {
-    width: 280px;
-    height: 280px;
+/* Ipad Pro12 */
+@media only screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
   }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 120px !important;
+    font-size: 30px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 25px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .image-profile,
   .image-typing {
-    width: 280px;
-    height: 280px;
-  }
-  .main-content {
-    font-size: 18px;
-  }
-  .secondary-content {
-    margin-top: 20px;
+    width: 240px;
+    height: 240px;
   }
   .buttons {
     font-size: 18px;
+    gap: 30px;
   }
   .header-right a {
     font-size: 20px;
   }
-}
-/* Devices ≤ 1024px (tablets and smaller) */
-@media (max-width: 1024px) {
-  .image-profile {
-    width: 200px;
-    height: 200px;
+  .top-lines {
+    margin-top: 110px;
   }
-  .image-typing {
-    width: 200px;
-    height: 200px;
+  .skills-text {
+    font-size: 25px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main-content {
+    margin-top: 120px; 
+    font-size: 20px !important;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-top: 20px !important;
+    margin-left: -20px;
+  }
+  .bi-bi-filetype-css, .bi-bi-filetype-html,
+  .bi-bi-filetype-js {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 30px;
   }
   .buttons {
-    margin-top: -10px;
-    font-size: 16px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
-  .page-section.section-1 {
-    margin-bottom: 100px;
+  .btn-info, .btn-success {
+    font-size: 25px !important;
+    padding: 20px 50px !important;
+    margin-bottom: 50px;
+  }
+  .btn-info {
+    width: 500px !important;
+  }
+  .content-right {
+    margin-left: -170px;
+  }
+}
+/* Ipad Pro11 */
+@media only screen and (width: 834px) and (height: 1194px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 70px !important;
+    font-size: 30px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 25px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .main-content {
+    margin-top: 80px;
+  }
+  .secondary-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content,
+  .skills-text {
+    width: 750px !important;
+    font-size: 25px !important;
+  }
+  .image-profile,
+  .image-typing {
+    width: 220px;
+    height: 220px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  .bi-bi-filetype-css, .bi-bi-filetype-html, 
+  .bi-bi-filetype-js {
+    width: 100px;
+    height:auto;
+    margin-left: -20px !important;
+  }
+  .btn-info, .btn-success {
+    font-size: 25px !important;
+  }
+  .header-right a {
+    font-size: 18px;
+  }
+}
+/* IPad Air */
+@media only screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-gradient {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 80px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 20px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .image-profile,
+  .image-typing {
+    width: 210px;
+    height: 210px;
+  }
+  .header-right a {
+    font-size: 17px;
+  }
+  .main-content {
+    margin-top: 60px;
+    width: 730px !important;
+  }
+  .skills-text {
+    font-size: 22px;
+  }
+  .secondary-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  .bi-bi-filetype-css, .bi-bi-filetype-html, 
+  .bi-bi-filetype-js {
+    width: 100px;
+    height:auto;
+    margin-left: -20px !important;
+  }
+  .btn-info, .btn-success {
+    font-size: 25px !important;
+    font-weight: 400 !important;
+  }
+}
+/* IPad Mini */
+@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 80px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 20px !important;
+  }
+  .footer {
+    font-size: 20px !important;
+  }
+  .name {
+    font-size: 24px !important;
+  }
+  .position {
+    font-size: 14px !important;
+  }
+  .image-profile,
+  .image-typing {
+    width: 190px;
+    height: 190px;
+  }
+  .main-content {
+    margin-top: 50px !important;
+    font-size: 18px !important;
+  }
+  .buttons, .btn-info, .btn-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px !important;
+    font-size: 20px !important;
+    gap: 18px;
+  }
+  .header-right a {
+    font-size: 16px;
+  }
+  .top-lines {
+    margin-top: 70px;
   }
 }
 /* Devices ≤ 768px (tablets and smaller) */
@@ -332,16 +548,25 @@ html, body {
     font-size: 16px;
     padding-bottom: 8px !important;
   }
+  .secondary-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .content-left {
+    display: flex;
+    flex-direction: column;
+  }
   .icons {
     display: flex;
+    flex-direction: row;
     align-items:flex-start;
     margin-left: -20px;
+    margin-right: 50px;
     margin-top: -40px;
     margin-bottom: 5px;
   }
   .image-profile,
   .image-typing {
-    margin-top: 10px;
     width: 150px;
     height: 150px;
   }
@@ -350,6 +575,49 @@ html, body {
   }
   .container-footer {
     padding: 35px;
+  }
+  
+}
+/* Devices ≤ 1024px (tablets and smaller) */
+@media (max-width: 1024px) {
+  .image-profile {
+    width: 200px;
+    height: 200px;
+  }
+  .image-typing {
+    width: 200px;
+    height: 200px;
+  }
+  .buttons {
+    margin-top: -10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .page-section.section-1 {
+    margin-bottom: 100px;
+  }
+}
+/* Devices ≤ 1440px (tablets and smaller) */
+@media (max-width: 1440px) {
+  .image-profile {
+    width: 280px;
+    height: 280px;
+  }
+  .image-typing {
+    width: 280px;
+    height: 280px;
+  }
+  .main-content {
+    font-size: 18px;
+  }
+  .secondary-content {
+    margin-top: 20px;
+  }
+  .buttons {
+    font-size: 18px;
+  }
+  .header-right a {
+    font-size: 20px;
   }
 }
 /* On screens above 400px, show normally and hide hamburger */
@@ -379,7 +647,6 @@ html, body {
     color: #333;
     z-index: 1100;
   }
-
   .header-right {
     display: none !important; /* Hidden by default */
     flex-direction: column;
@@ -393,14 +660,12 @@ html, body {
     z-index: 1000;
     column-gap: 25px;
   }
-
   .header-right.show {
     display: flex !important;
     text-align: left;
     gap: 25px !important;
     background-color:#1B1B1B;
   } 
-
   .header-right a {
     margin: 0;
     width: 100px;
@@ -464,7 +729,7 @@ html, body {
     height: auto;
     display: block;
     margin-top: -20px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .icons {
     display: flex;
@@ -473,5 +738,8 @@ html, body {
   }
   .top-lines {
     top: 85px;
+  }
+  .skills-text {
+    font-size: 16px;
   }
 }
