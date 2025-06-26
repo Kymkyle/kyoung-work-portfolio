@@ -323,18 +323,251 @@ h2 {
   color: white;
 }
 /* Keep your original CSS here */
-/* Responsive Styles for Tablets (≤ 1440px) */
-@media (max-width: 1440px) {
+/* Ipad Pro 12 */
+@media only screen and (width: 1024px) and (height: 1366px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 120px !important;
+    font-size: 30px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 25px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .projects {
+    margin-top: 30px !important;
+    font-size: 35px;
+  }
+  .project-body {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next row */
+    padding: 30px;
+    gap: 20px; /* optional: spacing between containers */
+    justify-content: center; /* optional: center content */
+  }
+  .fw-bold {
+    width: 400px !important; 
+    box-sizing: border-box;
+    font-size: 30px !important;
+  }
+  .project-name {
+    font-size: 28px;
+  }
+  .rainbow-background {
+    padding-top: 50px;
+  }
+  .project-tagline {
+    margin-top: 250px !important;
+    font-size: 40px !important;
+    width: 950px !important;
+  }
   .header-right a {
     font-size: 20px;
   }
 }
-/* Tablet View (max-width: 1024px) */
-@media (max-width: 1024px) {
+/* Ipad Pro 11 */
+@media only screen and (width: 834px) and (height: 1194px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 70px !important;
+    font-size: 30px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 25px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .projects {
+    margin-top: 30px !important;
+    font-size: 30px;
+  }
   .project-body {
-    flex-direction: row;
-    margin: 0;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next row */
+    padding: 30px;
+    gap: 20px; /* optional: spacing between containers */
+    justify-content: center; /* optional: center content */
+  }
+  .fw-bold {
+    width: 400px !important; 
+    box-sizing: border-box;
+    font-size: 28px !important;
+    text-shadow: none;
+  }
+  .project-name {
+    font-size: 25px;
+  }
+  .rainbow-background {
+    padding-top: 50px;
+  }
+  .project-tagline {
+    margin-top: 200px !important;
+    font-size: 35px !important;
+    width: 700px !important;
+  }
+  .bi-bi-globe {
+    right: 50px !important;
+    top: 200px;
+  }
+}
+/* Ipad Air */
+@media only screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .name {
+    font-size: 40px !important;
+  }
+  .position {
+    font-size: 18px !important;
+  }
+  .header-gradient {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 80px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 20px !important;
+    
+  }
+  .footer {
+    font-size: 25px !important;
+  }
+  .projects {
+    margin-top: 30px !important;
+    font-size: 28px;
+  }
+  .project-body {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next row */
+    padding: 30px;
+    gap: 20px; /* optional: spacing between containers */
+    justify-content: center; /* optional: center content */
+  }
+  .fw-bold {
+    width: 400px !important; 
+    box-sizing: border-box;
+    font-size: 25px !important;
+    text-shadow: none;
+  }
+  .project-name {
+    font-size: 22px;
+  }
+  .rainbow-background {
+    padding-top: 50px;
+  }
+  .project-tagline {
+    margin-top: 200px !important;
+    font-size: 30px !important;
+    width: 700px !important;
+  }
+  .bi-bi-globe {
+    right: 50px !important;
+    top: 200px;
+  }
+  .bi-bi-pc-display-horizontal {
+    top: -100px !important;
+  }
+}
+/* Ipad Mini */
+@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 80px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 20px !important;
+  }
+  .footer,
+  .container2 {
+    font-size: 20px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end;
+  }
+  .name {
+    font-size: 24px !important;
+  }
+  .position {
+    font-size: 14px !important;
+  }
+   .projects {
+    margin-top: 30px !important;
+    font-size: 25px !important;
+  }
+  .project-body {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to next row */
+    padding: 30px;
+    gap: 20px; /* optional: spacing between containers */
+    justify-content: center; /* optional: center content */
+  }
+  .fw-bold {
+    width: 400px !important; 
+    box-sizing: border-box;
+    font-size: 23px !important;
+    text-shadow: none;
+  }
+  .project-name {
+    font-family: Tahoma;
+    font-size: 20px !important;
+  }
+  .rainbow-background {
+    padding-top: 50px;
+  }
+  .project-tagline {
+    margin-top: 150px !important;
+    font-size: 25px !important;
+    width: 700px !important;
+  }
+  .bi-bi-globe {
+    right: 50px !important;
+    top: 550px;
   }
 }
 /* Tablet View (max-width: 768px) */
@@ -415,6 +648,20 @@ h2 {
     z-index: 1;
   }
 }
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .project-body {
+    flex-direction: row;
+    margin: 0;
+    padding: 10px;
+  }
+}
+/* Responsive Styles for Tablets (≤ 1440px) */
+@media (max-width: 1440px) {
+  .header-right a {
+    font-size: 20px;
+  }
+}
 /* On screens above 400px, show normally and hide hamburger */
 @media (min-width: 401px) {
   .hamburger {
@@ -433,6 +680,9 @@ h2 {
 @media (max-width: 400px) {
   .container {
     margin-top: 55px;
+  }
+  .fw-bold {
+    text-shadow: none;
   }
   .project-body {
     margin: 0;
@@ -498,6 +748,9 @@ h2 {
   }
   .bi-bi-laptop {
     margin-right: -200px;
+  }
+  .bi-bi-globe {
+    left: -200px;
   }
 }
 /* Mobile View (max-width: 360px) */
