@@ -706,8 +706,11 @@ ul {
     justify-content: flex-start;
   }
 }
-/* Responsive Styles for Tablets (≤ 768px)(1024width) */
-@media (max-width: 768px) {
+/* iPad Portrait - 768px width */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
   .image-left  img{
     width: 250px !important;
     height: 400px;
@@ -745,8 +748,11 @@ ul {
     font-size: 3rem !important;
   }
 }
-/* Responsive Styles for Tablets (≤ 1024px)(768 width) */
-@media (max-width: 1024px) {
+/* iPad Landscape - 1024px width */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
   .hover-word,
   .tag-line {
     font-size: 3.5rem;
