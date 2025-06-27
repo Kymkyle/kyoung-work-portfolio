@@ -706,11 +706,13 @@ ul {
     justify-content: flex-start;
   }
 }
-/* iPad Portrait - 768px width */
-@media only screen 
-  and (min-device-width: 768px) 
+@media 
+  only screen and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
+  
+  /* Styles for iPad 6th Gen (Retina display) in portrait */
   .image-left  img{
     width: 250px !important;
     height: 400px;
@@ -748,11 +750,14 @@ ul {
     font-size: 3rem !important;
   }
 }
-/* iPad Landscape - 1024px width */
-@media only screen 
-  and (min-device-width: 768px) 
+/* Landscape mode - 1024px width */
+@media 
+  only screen and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: landscape) {
+
+  /* Styles for iPad 6th Gen (Retina display) in landscape */
   .hover-word,
   .tag-line {
     font-size: 3.5rem;
