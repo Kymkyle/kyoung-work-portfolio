@@ -514,15 +514,28 @@ html, body {
   and (orientation: portrait) {
   
   /* Styles for iPad 6th Gen (Retina display) in portrait */
+  .w-100 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .header-right {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 80px !important;
+  }
+  .text-a {
+    display: flex;
+    font-size: 20px !important;
+  }
+  .footer {
+    font-size: 20px !important;
+  }
   .name {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .position {
-    font-size: 12px;
-  }
-  .header-right a {
-    font-size: 16px;
-    margin-top: 0.8rem;
+    font-size: 14px !important;
   }
   .page-section.section-1 {
     flex-direction: column;
@@ -534,7 +547,7 @@ html, body {
   }
   .top-lines {
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -579,7 +592,7 @@ html, body {
   .image-typing {
     width: 150px;
     height: 150px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
   .footer {
     flex-direction: column;
@@ -612,6 +625,12 @@ html, body {
   }
   .page-section.section-1 {
     margin-bottom: 100px;
+  }
+  .top-lines {
+    margin-top: 100px;
+  }
+  .content-right {
+    margin-bottom: 50px;
   }
 }
 /* Devices ≤ 1440px (tablets and smaller) */
