@@ -20,14 +20,14 @@
     pointer-events: none;
 }
 /* Protection: Disable text selection & image dragging */
-body, html, .background-image, .main-content, .why-work-with-me-content, img {
+/* body, html, .background-image, .main-content, .why-work-with-me-content, img {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
   user-drag: none;
-}
+} */
 /* Ensure everything fits within the screen dynamically */
 html, body {
     width: 100%;
