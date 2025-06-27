@@ -55,20 +55,31 @@ html, body {
 .page-section.section-1 {
   padding-top: 8rem;
   border-bottom: 1px solid #ddd;
+
+  /* Fallback solid color */
+  background-color: #4dd0e1;
+
+  background: -webkit-linear-gradient(135deg, #80deea, #4dd0e1); /* iOS Safari */
   background: linear-gradient(135deg, #80deea, #4dd0e1);
-  background-size: 200% 200%;
-  background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: screen;
+  background-attachment: scroll; /* FIX: avoid 'fixed' on iPad */
 }
 .page-section.section-2 {
   padding: 5rem 1.25rem;
+
+  /* Fallback solid color */
+  background-color: #4dd0e1;
+
+  background: -webkit-linear-gradient(135deg, #b2ebf2, #4dd0e1, #0097a7); /* iOS Safari */
   background: linear-gradient(135deg, #b2ebf2, #4dd0e1, #0097a7);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll; /* FIX: avoid 'fixed' */
   background-size: cover;
   transition: background 0.5s ease-in-out;
   box-shadow: 0 0 20px rgba(42, 82, 152, 0.2);
+  -webkit-backdrop-filter: blur(4px); /* iOS Safari support */
   backdrop-filter: blur(4px);
   min-height: 100vh;
 }
