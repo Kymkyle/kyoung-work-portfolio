@@ -727,6 +727,9 @@ ul {
   .container.text-center {
     margin-top: 20px;
   }
+  .contact-me {
+    margin-top: -20px !important;
+  }
   .image-left  img{
     width: 250px !important;
     height: 400px;
