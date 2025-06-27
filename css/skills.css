@@ -612,6 +612,12 @@ html, body {
   .page-section.section-1 {
     margin-bottom: 100px;
   }
+  .top-lines {
+    margin-top: 100px;
+  }
+  .content-right {
+    margin-bottom: 50px;
+  }
 }
 /* Devices ≤ 1440px (tablets and smaller) */
 @media (max-width: 1440px) {
