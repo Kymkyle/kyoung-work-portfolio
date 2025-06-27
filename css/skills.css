@@ -545,15 +545,15 @@ html, body {
   .main-content {
     margin-top: -40px;
   }
-  /* .top-lines {
+  .top-lines {
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 6px;
     z-index: 1000; /* HIGHER than your header */
-    /* pointer-events: none; 
-  }  */
+    pointer-events: none; 
+  } 
   .secondary-content {
     flex-direction: row;
     justify-content: space-between;
