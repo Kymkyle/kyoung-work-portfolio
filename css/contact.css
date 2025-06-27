@@ -20,14 +20,14 @@
     pointer-events: none;
 }
 /* Protection: Disable text selection & image dragging */
-body, html, .background-image, .main-content, .why-work-with-me-content, img {
+/* body, html, .background-image, .main-content, .why-work-with-me-content, img {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
   user-drag: none;
-}
+} */
 /* Ensure everything fits within the screen dynamically */
 html, body {
     width: 100%;
@@ -47,10 +47,15 @@ html, body {
 }
 .page-section.section-1 {
     padding-top: 60px;
+
+    /* Fallback solid color */
+    background-color: #ffb8b1;
+
     background: linear-gradient(135deg, #eec0c6, #ffb8b1);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
+    background-attachment: scroll; /* FIX: avoid 'fixed' on iPad */
     display: flex;
     flex-direction: row;
 }
