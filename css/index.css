@@ -724,6 +724,9 @@ ul {
   and (orientation: portrait) {
   
   /* Styles for iPad 6th Gen (Retina display) in portrait */
+  .container.text-center {
+    margin-top: 20px;
+  }
   .image-left  img{
     width: 250px !important;
     height: 400px;
