@@ -527,8 +527,8 @@ h2 {
   and (-webkit-min-device-pixel-ratio: 2) {
 
 }
-/* On screens above 401px, show normally and hide hamburger */
-@media (min-width: 401px) {
+/* On screens above 440px, show normally and hide hamburger */
+@media (min-width: 440px) {
   .hamburger {
     display: none;
   }
@@ -539,6 +539,131 @@ h2 {
     gap: 2rem;
     box-shadow: none;
     padding: 0;
+  }
+}
+/* 📱 iPhone 14 Pro Max */
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+  .header-gradient {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5px !important;
+  }  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #333;
+    z-index: 1100;
+  }
+  .name {
+    font-size: 24px !important;
+    margin-left: 10px;
+  }
+  .position {
+    font-size: 14px !important;
+    margin-left: 10px;
+  }
+  .header-right {
+    display: none !important; /* Hidden by default */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    column-gap: 25px;
+  }
+
+  .header-right.show {
+    display: flex !important;
+    text-align: left;
+    gap: 25px !important;
+    background-color:#1B1B1B;
+  }
+  .header-right a {
+    margin: 0;
+    width: 100px;
+    text-shadow: none;
+    box-shadow: none;
+    font-family: Tahoma, sans-serif;
+    color: white !important;
+    font-weight: 500;
+    font-size: 16px !important;
+  }
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .text-a {
+    text-align: left !important;
+    line-height: 24px;
+    margin-top: 0 !important;
+  }
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .project-tagline {
+    font-size: 18px !important;
+    margin-top: -20px !important;
+  }
+  .project-body {
+    width: 95%;
+  }
+  .projects, .project-name, .fw-bold {
+    font-size: 18px !important;
+  }
+  .bi-bi-globe {
+    top: 820px !important;
+    right: -170px;
+  }
+  .bi-bi-pc-display-horizontal {
+    left: 5px;
+    margin-left: 0;
+    top: 110px !important;
+  }
+}
+/* 📱 iPhone 12 Pro */
+@media only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  .project-tagline {
+    font-size: 18px !important;
+    margin-top: -20px !important;
+  }
+  .project-body {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .projects {
+    margin-top: -20px;
+  }
+  .projects, .project-name, .fw-bold {
+    font-size: 18px !important;
+  }
+  .bi-bi-globe {
+    top: 820px !important;
+    right: -170px;
+  }
+  .bi-bi-pc-display-horizontal {
+    left: 5px;
+    margin-left: 0;
+    top: 110px !important;
   }
 }
 /* Responsive Styles for Tablets (≤ 400px) */
