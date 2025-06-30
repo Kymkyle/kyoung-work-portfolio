@@ -232,12 +232,12 @@ html, body {
     margin-left: 60px;
   }
   .name {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 20px;
     height: auto;
   }
   .position {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 20px;
   }
   .text-a {
@@ -288,12 +288,12 @@ html, body {
     margin-left: 60px;
   }
   .name {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 30px;
     height: auto;
   }
   .position {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 30px;
   }
   .text-a {
@@ -365,7 +365,9 @@ html, body {
   and (max-device-width: 768px) 
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+  .text-a {
+    margin-left: 21.5px !important;
+  }
 }
 /* iPad 6th Gen - Landscape */
 @media only screen 
