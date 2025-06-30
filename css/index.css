@@ -707,7 +707,13 @@ ul {
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
   .text-a {
-    margin-left: 21px !important;
+    margin-left: 21.5px !important;
+  }
+  .desired-position {
+    margin-top: -20px;
+  }
+  .about-desired-position {
+    margin-bottom: -10px;
   }
 }
 /* iPad 6th Gen - Landscape */
