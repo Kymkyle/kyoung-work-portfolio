@@ -375,8 +375,8 @@ html, body {
   and (-webkit-min-device-pixel-ratio: 2) {
 
 }
-/* On screens above 401px, show normally and hide hamburger */
-@media (min-width: 401px) {
+/* On screens above 440px, show normally and hide hamburger */
+@media (min-width: 440px) {
   .hamburger {
     display: none;
   }
@@ -387,6 +387,225 @@ html, body {
     gap: 2rem;
     box-shadow: none;
     padding: 0;
+  }
+}
+/* 📱 iPhone 14 Pro Max */
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+  .header-gradient {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5px !important;
+  }  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #333;
+    z-index: 1100;
+  }
+  .name {
+    font-size: 24px !important;
+    margin-left: 10px;
+  }
+  .position {
+    font-size: 14px !important;
+    margin-left: 10px;
+  }
+  .header-right {
+    display: none !important; /* Hidden by default */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    column-gap: 25px;
+  }
+
+  .header-right.show {
+    display: flex !important;
+    text-align: left;
+    gap: 25px !important;
+    background-color:#1B1B1B;
+  }
+  .header-right a {
+    margin: 0;
+    width: 100px;
+    text-shadow: none;
+    box-shadow: none;
+    font-family: Tahoma, sans-serif;
+    color: white !important;
+    font-weight: 500;
+    font-size: 16px !important;
+  }
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .text-a {
+    text-align: left !important;
+    line-height: 24px;
+    margin-top: 0 !important;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .about-me-content,
+  .about-me-content2,
+  .about-me-content1 {
+    font-size: 18px;
+    margin-left: -20px;
+    width: 380px;
+  }
+  .about-me-content2 {
+    width: 350px;
+  }
+  .about-me-content1-right-side {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-info, .btn-success {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: -10px;
+    margin-top: -20px;
+    width: 300px;
+  }
+  .image-profile {
+    margin-top: 0;
+    margin-left: 45px;
+    margin-bottom: 130px;
+  }
+}
+/* 📱 iPhone 12 Pro */
+@media only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  .header-gradient {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #333;
+    z-index: 1100;
+  }
+  .name {
+    font-size: 24px !important;
+    margin-left: 10px;
+  }
+  .position {
+    font-size: 14px !important;
+    margin-left: 10px;
+  }
+  .header-gradient {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px !important;
+  }
+  .header-right {
+    display: none !important; /* Hidden by default */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    column-gap: 25px;
+  }
+
+  .header-right.show {
+    display: flex !important;
+    text-align: left;
+    gap: 25px !important;
+    background-color:#1B1B1B;
+  }
+  .header-right a {
+    margin: 0;
+    width: 100px;
+    text-shadow: none;
+    box-shadow: none;
+    font-family: Tahoma, sans-serif;
+    color: white !important;
+    font-weight: 500;
+    font-size: 16px !important;
+  }
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .text-a {
+    text-align: left !important;
+    line-height: 24px;
+    margin-top: 0 !important;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }  
+  .title {
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: -10px;
+  }
+  .about-me-content,
+  .about-me-content2,
+  .about-me-content1 {
+    font-size: 16px;
+    margin-left: -30px;
+    width: 370px;
+  }
+  .about-me-content2 {
+    width: 320px;
+  }
+  .about-me-content1-right-side {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-info, .btn-success {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: -10px;
+    margin-top: -20px;
+    width: 300px;
+  }
+  .img-profile {
+    width: 250px;
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
   }
 }
 /* Responsive Styles for Tablets (≤ 400px) */
@@ -460,7 +679,7 @@ html, body {
     font-size: 16px;
   }
   .title {
-    font-size: 25px;
+    font-size: 28px;
     margin-top: -20px;
   }
   .about-me-content,
@@ -468,7 +687,10 @@ html, body {
   .about-me-content1 {
     font-size: 18px;
     margin-left: -20px;
-    width: 340px;
+    width: 370px;
+  }
+  .about-me-content2 {
+    width: 330px;
   }
   .about-me-content1-right-side {
     display: flex;
@@ -495,6 +717,10 @@ html, body {
     margin-top: -35px;
     margin-left: -20px;
   }
+   .about-me-content2 {
+    margin-bottom: 10px;
+    width: 300px !important;
+  }
   .about-me-content,
   .about-me-content2,
   .about-me-content1 {
@@ -511,9 +737,6 @@ html, body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .about-me-content2 {
-    margin-bottom: 10px;
-  }
   .about-me-content {
     margin-top: 20px;
   }
@@ -525,11 +748,11 @@ html, body {
     margin-top: -10px;
     width: 300px;
   }
-  .image-profile {
+  .img-profile {
     margin-top: -40px;
     margin-left: 25px;
     width: 250px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
   }
 }
 /* Responsive Styles for Tablets (≤ 320px) */
@@ -538,13 +761,18 @@ html, body {
   .about-me-content2,
   .about-me-content1 {
     font-size: 16px !important;
-    margin-left: -20px;
-    width: 270px;
+    margin-left: -30px;
+    width: 300px;
     padding: 0;
   }
   .title {
     margin-bottom: -10px;
     margin-top: -20px;
+    margin-left: -30px;
+  }
+  .about-me-content2 {
+    margin-bottom: 10px;
+    width: 280px !important;
   }
   .btn-info, .btn-success {
     display: flex;
@@ -553,5 +781,14 @@ html, body {
     margin-left: -20px;
     margin-top: -10px;
     width: 250px;
+  }
+  .contact-me {
+    margin-top: -30px;
+  }
+  .img-profile {
+    margin-top: -40px;
+    margin-left: 10px;
+    width: 240px;
+    margin-bottom: 50px;
   }
 }
