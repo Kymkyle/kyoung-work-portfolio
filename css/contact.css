@@ -61,9 +61,11 @@ html, body {
 }
 /* Header Style */
 .header-gradient {
+  display: flex;
   position: fixed;
   top: 0;
-  left: 0;
+  padding-left: 0 !important;
+  padding-right: 0;
   width: 100%;
   z-index: 1000; 
   background: rgba(255, 255, 255, 0.8); 
@@ -93,43 +95,39 @@ html, body {
   cursor: pointer;
   color: #4DA8DA !important;
 }
+/* Typography */
 .name {
-    font-size: 30px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    display: inline-block;
-    transition: transform 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .position {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    /* Light text shadow to lift dark text */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4),
-                -1px -1px 1px rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+.text-a {
+  font-size: 20px;
 }
 /* Footer styling */
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* full width */
-    display: flex;
-    background-color: #1B1B1B;
-    color: white;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* full width */
+  display: flex;
+  background-color: #1B1B1B;
+  color: white;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
 }
 .container-footer {
-    padding: 35px;
-    width: 100%;
-    max-width: 1320px; /* optional, aligns with Bootstrap container */
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+  padding: 35px;
+  width: 100%;
+  max-width: 1320px; /* optional, aligns with Bootstrap container */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 /* main-content */
 .contact-details-container {
@@ -430,200 +428,163 @@ h2 {
   color: white;
 }
 /* Keep your original CSS here */
-/* iPad Pro 12.9" Portrait */
-@media (max-width: 1024px) and (orientation: portrait) {
-  .w-100 {
+/* iPad Pro 12.9" Portrait (1024px) */
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .header-gradient {
     display: flex;
     flex-direction: column !important;
-  }
-  .name {
-    font-size: 40px !important;
-  }
-  .position {
-    font-size: 18px !important;
+    justify-content: flex-start;
   }
   .header-right {
-    display: flex;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    font-size: 30px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items:flex-start;
+    margin-top: 90px;
+    margin-left: 60px;
+  }
+  .name {
+    font-size: 40px;
+    margin-left: 20px;
+    height: auto;
+  }
+  .position {
+    font-size: 18px;
+    margin-left: 20px;
   }
   .text-a {
     display: flex;
-    font-size: 25px !important;
-    
+    font-size: 25px;
+    margin-right: 60px;
+    margin-top: 110px !important;
   }
   .footer {
+    font-size: 25px;
+  }
+  .main-content {
+    margin-top: 180px;
+  }
+  .contact-details-container, 
+  .contact-details-text-content,
+  .contact-details-text,
+  .contact-details-text-content1,
+  .contact-details-text2 {
     font-size: 25px !important;
   }
-  .contact-details-container {
-    line-height: 0 !important;
-    margin-left: 30px !important;
-    margin-top: -20px;
-  }
-  .contact-details-header {
-    font-size: 28px;
-    margin-top: 250px !important;
-  }
-  .contact-details-text-content {
-    margin-top: 25px;
-    font-size: 25px;
-  }
-  .contact-details-text {
-    margin-top: 25px;
-  }
-  .contact-details-text-content1,
-  .contact-body,
-  .contact-details-text,
-  .contact-details-text2 {
-    font-size: 25px;
-  }
-  .get-in-touch {
-    font-size: 25px;
-    width: 300px;
-    margin-bottom: 150px;
-    margin-right: -30px;
+  .bi-bi {
+    width: 40px !important;
+    height: auto;
   }
   .contact-details-text-content1 {
     margin-top: 40px;
   }
+  .contact-details-text,
+  .contact-details-text-content1 {
+    margin-top: 30px;
+  }
 }
-/* iPad Pro 11" (834x1194) */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1194px) 
-  and (orientation: portrait) {
-
-  .w-100 {
+/* iPad Pro 11" Portrait */
+@media (max-width: 834px) and (orientation: portrait) {
+  .header-gradient {
     display: flex;
     flex-direction: column !important;
+    justify-content: flex-start;
+  }
+  .header-right {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items:flex-start;
+    margin-top: 90px;
+    margin-left: 60px;
   }
   .name {
     font-size: 40px;
+    margin-left: 30px;
+    height: auto;
   }
   .position {
-    font-size: 18px ;
-  }
-  .header-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start !important;
-    gap: 70px !important;
-    font-size: 30px !important;
+    font-size: 18px;
+    margin-left: 30px;
   }
   .text-a {
     display: flex;
-    font-size: 25px !important;
-    
-  }
-  .footer {
-    font-size: 25px !important;
-  }    
-  .contact-details-header {
-    font-size: 28px;
-    margin-top: 150px !important;
-  }
-  .contact-details-text-content {
-    margin-top: -30px !important;
     font-size: 25px;
-  }
-  .get-in-touch {
-    margin-top: -130px !important;
-  }
-}
-/* IPad Air */
-@media only screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
-  .w-100 {
-    display: flex;
-    flex-direction: column !important;
-  }
-  .name {
-    font-size: 40px !important;
-  }
-  .position {
-    font-size: 18px !important;
-  }
-  .header-gradient {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .header-right {
-    display: flex;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    gap: 80px !important;
-  }
-  .text-a {
-    display: flex;
-    font-size: 20px !important;
-    
-  }
-  .footer {
-    font-size: 25px !important;
-  }
-  .contact-details-header {
-    font-size: 28px;
-    margin-top: 130px !important;
-  }
-  .contact-details-text-content {
-    margin-top: -70px !important;
-    font-size: 25px;
-  }
-  .get-in-touch {
-    margin-top: -130px !important;
-  }
-}
-/* IPad Mini */
-@media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
-  .w-100 {
-    display: flex;
-    flex-direction: column !important;
-  }
-  .header-right {
-    display: flex;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    gap: 80px !important;
-  }
-  .text-a {
-    display: flex;
-    font-size: 20px !important;
-  }
-  .footer {
-    font-size: 20px !important;
-  }
-  .name {
-    font-size: 24px !important;
-  }
-  .position {
-    font-size: 14px !important;
-  }
-  .contact-details-header {
-    font-size: 20px;
+    margin-right: 20px;
     margin-top: 100px !important;
   }
-  .contact-details-text-content {
-    margin-top: -70px !important;
-    font-size: 18px;
+  .footer {
+    font-size: 25px;
+  }
+  .main-content {
+    margin-top: 110px;
+  }
+  .contact-details-container, 
+  .contact-details-text-content,
+  .contact-details-text,
+  .contact-details-text-content1,
+  .contact-details-text2 {
+    font-size: 25px !important;
+  }
+  .bi-bi {
+    width: 40px !important;
+    height: auto;
+  }
+  .contact-details-text-content1 {
+    margin-top: 20px !important;
+  }
+  .contact-details-text,
+  .contact-details-text-content1 {
+    margin-top: 20px !important;
+  }
+  .contact-body {
+    padding-bottom: 0;
   }
   .get-in-touch {
-    font-size: 18px;
-    margin-top: -130px !important;
+    margin-top: -200px;
   }
-  .contact-details-text-content1,
-  .contact-body,
-  .contact-details-text,
-  .contact-details-text2 {
-    font-size: 18px;
+}
+/* iPad Air (820px width) */
+@media (max-width: 820px) {
+  .name {
+    margin-left: 15px;
   }
-}  
-/* Devices ≤ 1440px (tablets and smaller) */
-@media (max-width: 1440px) {
-  .header-right a {
-    font-size: 20px !important;
+  .position {
+    margin-left: 15px;
   }
-}  
-/* On screens above 400px, show normally and hide hamburger */
+  .contact-body {
+    margin-top: -30px !important;
+  }
+}
+/* iPad Mini Portrait */
+@media (max-width: 768px) and (orientation: portrait) {
+  .text-a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 23px;
+  }
+  .name {
+    margin-left: 5px;
+  }
+  .position {
+    margin-left: 5px;
+  }
+}
+/* iPad 6th Gen - Portrait 768 x 1024*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 768px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPad 6th Gen - Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 768px) 
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* On screens above 401px, show normally and hide hamburger */
 @media (min-width: 401px) {
   .hamburger {
     display: none;
@@ -643,24 +604,25 @@ h2 {
     display: block;
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     font-size: 36px;
     background: none;
     border: none;
     color: #333;
     z-index: 1100;
   }
-  .w-100,
-  .header-gradient {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-  }
   .name {
-    font-size: 24px !important;
+    font-size: 24px;
+    margin-left: 10px;
   }
   .position {
-    font-size: 14px !important;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .header-gradient {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px !important;
   }
   .header-right {
     display: none !important; /* Hidden by default */
@@ -682,7 +644,6 @@ h2 {
     gap: 25px !important;
     background-color:#1B1B1B;
   }
-
   .header-right a {
     margin: 0;
     width: 100px;
@@ -700,98 +661,134 @@ h2 {
   .text-a {
     text-align: left !important;
     line-height: 24px;
+    margin-top: 0 !important;
   }
   .container-footer {
     display: flex;
     justify-content: center;
     font-size: 16px;
   }
-  .contact-details-text-content1,
-  .contact-details-text-content,
-  .contact-body,
-  .contact-details-text,
-  .contact-details-text2 {
-    font-size: 16px;
+  .main-content {
+    margin-top: -10px;
   }
   .contact-details-header {
-    display: flex;
-    font-size: 18px;
-    margin-top: -150px !important;
-    margin-left: -20px;
-    width: 200px;
+    font-size: 20px;
+    margin-left: 20px;
   }
+  .contact-details-container, 
+  .contact-details-text-content,
   .contact-details-text,
-  .contact-details-text-content1 {
-    margin-left: -60px;
+  .contact-details-text-content1,
+  .contact-details-text2 {
+    font-size: 18px !important;
   }
-  .contact-details-text {
-    margin-top: 10px;
-    width: 345px;
+  .bi-bi {
+    width: 40px !important;
+    height: auto;
   }
   .contact-details-text-content1 {
-    margin-top: 10px;
-    margin-bottom: -20px;
+    margin-top: 40px;
   }
   .contact-details-text-content {
-    margin-top: -220px !important;
+    width: 350px;
+  
   }
-  .body-left-side {
-    margin-left: -90px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  .contact-details-text, .contact-details-text-content1 {
+    width: 350px;
+    margin-left: -50px;
   }
-  .body-right-side {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    margin-top: 40px;
-    margin-left: -140px;
+  .contact-details-text1 {
+    margin-left: -80px;
   }
   .get-in-touch {
-    position: relative; /* or fixed if you want it to stay when scrolling */
+    margin-left: -170px !important;
     font-size: 16px;
-    margin-top: 430px;
-    margin-bottom: 30px;
-    max-width: 200px !important;
+  }
+  .popup {
+    width: 360px;
   }
 }
 /* Responsive Styles for Tablets (≤ 360px) */
 @media (max-width: 360px) {
-  .contact-details-text {
-    width: 310px;
-  } 
-  .body-right-side {
-    margin-left: 200;
-  }
   .contact-details-header {
-    margin-top: -180px !important;
+    font-size: 18px;
+    margin-left: 20px;
   }
-  .contact-details-text-content {
-    margin-top: -240px !important;
+  .contact-details-container, 
+  .contact-details-text-content,
+  .contact-details-text,
+  .contact-details-text-content1,
+  .contact-details-text2 {
+    font-size: 18px !important;
+  }
+  .bi-bi {
+    width: 30px !important;
+    height: auto;
   }
   .contact-details-text-content1 {
-    margin-top: 10px;
-    margin-bottom: -30px;
+    margin-top: 40px;
+  }
+  .contact-details-text-content {
+    width: 300px !important;
+  
+  }
+  .contact-details-text, .contact-details-text-content1 {
+    width: 300px;
+    margin-left: -50px;
+  }
+  .contact-details-text1 {
+    margin-left: -80px;
+    width: 300px;
   }
   .get-in-touch {
-    max-width: 150px !important;
+    margin-left: 0 !important;
+    font-size: 16px;
+    left: -250px;
+    width: 200px;
+  }
+  .popup {
+    width: 320px;
   }
 }
 /* Responsive Styles for Tablets (≤ 320px) */
 @media (max-width: 320px) {
-  .contact-details-text-content1 {
+  .contact-details-header {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .contact-details-container, 
+  .contact-details-text-content,
+  .contact-details-text,
+  .contact-details-text-content1,
+  .contact-details-text2 {
     font-size: 16px !important;
   }
-  .contact-details-text {
-    width: 280px;
-  } 
-  .contact-details-text2 {
-    font-size: 15px;
+  .bi-bi {
+    width: 30px !important;
+    height: auto;
+  }
+  .contact-details-text-content1 {
+    margin-top: 40px;
+  }
+  .contact-details-text-content {
+    width: 260px !important;
+  
+  }
+  .contact-details-text, .contact-details-text-content1 {
+    width: 260px;
+    margin-left: -50px;
+  }
+  .contact-details-text1 {
+    margin-left: -80px;
+    width: 260px;
   }
   .get-in-touch {
-    font-size: 15px;
-    margin-top: 420px;
-    margin-left: -30px;
+    margin-left: 0 !important;
+    font-size: 16px;
+    left: -260px;
+    width: 200px;
+  }
+  .popup {
+    width: 300px;
   }
 }
