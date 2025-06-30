@@ -536,16 +536,16 @@ ul {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 20px;
     height: auto;
   }
   .position {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 20px;
   }
   .text-a {
@@ -603,16 +603,16 @@ ul {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 30px;
     height: auto;
   }
   .position {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 30px;
   }
   .text-a {
@@ -706,7 +706,9 @@ ul {
   and (max-device-width: 768px) 
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+  .text-a {
+    margin-left: 20px !important;
+  }
 }
 /* iPad 6th Gen - Landscape */
 @media only screen 
