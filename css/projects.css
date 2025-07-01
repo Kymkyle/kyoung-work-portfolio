@@ -337,7 +337,7 @@ h2 {
     font-size: 25px;
   }
   .container {
-    margin-top: 230px;
+    padding-top: 130px;
   }
   .project-tagline, .projects {
     font-size: 30px !important;
