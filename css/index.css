@@ -269,6 +269,7 @@ html, body {
   flex-shrink: 1 !important;
 }
 .container-main-content {
+  font-size: 16px !important;
   width: 50rem;
   height: 20rem;
   padding: 2rem;
@@ -585,7 +586,7 @@ ul {
   }
   .image-03, .container-main-content {
     min-width: 920px;
-    font-size: 25px;
+    font-size: 25px !important;
     height: auto;
   }
   .bottom-content {
@@ -655,7 +656,7 @@ ul {
   }
   .container-main-content {
     width: 700px;
-    font-size: 25px;
+    font-size: 25px !important;
     height: auto;
   }
   .bottom-content {
@@ -843,7 +844,7 @@ ul {
   }
   .image-03, .container-main-content {
     width: 360px !important;
-    font-size: 18px;
+    font-size: 18px !important;
     height: auto;
   }
   .bottom-content {
@@ -967,7 +968,7 @@ ul {
   }
   .container-main-content {
     width: 330px;
-    font-size: 18px;
+    font-size: 18px !important;
     height: auto;
   }
   .image1, .image2, .image3, .image4 {
@@ -1061,7 +1062,7 @@ ul {
   }
   .container-main-content {
     width: 260px;
-    font-size: 16px;
+    font-size: 16px !important;
     height: auto;
   }
   .image1, .image2, .image3, .image4 {

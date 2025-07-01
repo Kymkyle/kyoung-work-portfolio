@@ -135,39 +135,6 @@ html, body {
   display: flex;
   justify-content: flex-end;
 }
-.bi-bi-laptop {
-  position: absolute;
-  fill: rgba(255, 255, 255, 0.253);
-  right: -100px;                  /* Off to the left of the container */
-  bottom: 20px;                   /* Aligned near the bottom */
-  z-index: 1;
-
-  /* Decorative border shape */
-  border-left: 5px solid transparent;
-  border-top-left-radius: 20px;
-}
-.bi-bi-globe {
-  position: absolute;
-  fill: rgba(255, 255, 255, 0.253);
-  right: 230px;                  /* Off to the left of the container */
-  bottom: 100px;                   /* Aligned near the bottom */
-  z-index: 2;
-
-  /* Decorative border shape */
-  border-left: 5px solid transparent;
-  border-top-left-radius: 20px;
-}
-.bi-bi-pc-display-horizontal {
-  position: absolute;
-  fill: rgba(255, 255, 255, 0.253);
-  left: -150px;                  /* Off to the left of the container */
-  top: 0;                   /* Aligned near the bottom */
-  z-index: 2;
-
-  /* Decorative border shape */
-  border-left: 5px solid transparent;
-  border-top-left-radius: 20px;
-}
 /* Main Page */
 .page-section.section-1 {
   display: flex;
@@ -195,7 +162,10 @@ h2 {
   top: 0; 
   left: 0;
   padding-bottom: 145px;
-  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  background: linear-gradient(135deg, #3ac9ec, #6dd5ed);
+
+
+
   background-size: 1200% 1200%;
   z-index: -1; /* Send behind other content */
 }
@@ -212,11 +182,6 @@ h2 {
   margin-bottom: 10px;
   letter-spacing: 4px;
   text-underline-offset: 10px;
-
-  /* Text Shadow */
-  text-shadow: 
-    2px 2px 4px rgba(54, 52, 52, 0.4),   /* soft outer glow */
-    -1px -1px 2px rgba(0, 0, 0, 0.5);       /* subtle depth shadow */
 }
 .project-body {
   display: flex;
@@ -250,30 +215,22 @@ h2 {
   display: flex;
   position: relative;
   flex: 1;
+  flex-wrap: wrap;
   z-index: 10;
   margin-right: 20px;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px; 
-  /* Light text shadow to lift dark text */
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4),
-              -1px -1px 1px rgba(255, 255, 255, 0.2);
+  padding: 30px;
   border: 10px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  /* Futuristic Embossed Background */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%); 
-  /* Extreme 3D Shadow Layers */
-  box-shadow:
-      0 15px 40px rgba(0, 0, 0, 0.6),               /* deep base shadow */
-      inset 0 8px 12px rgba(255, 255, 255, 0.07),    /* soft top light */
-      inset 0 -8px 15px rgba(0, 0, 0, 0.3),          /* bottom depth */
-      0 0 12px rgba(0, 255, 255, 0.3),               /* outer cyan glow */
-      0 0 20px rgba(255, 0, 255, 0.2);               /* outer magenta glow */
-  transform-style: preserve-3d;
+
+  background: rgba(255, 255, 255, 0.15); /* Higher opacity for better contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   perspective: 1200px;
+
+  color: #f0f0f0; /* Brighter text */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
 }
 .project-details{
   display: flex;
@@ -282,11 +239,6 @@ h2 {
   color:#1B1B1B;
   text-decoration: none;
   margin-bottom: 20px;
-
-  /* Text Shadow */
-  text-shadow: 
-      2px 2px 4px rgba(255, 255, 255, 0.4),   /* soft outer glow */
-      -1px -1px 2px rgba(0, 0, 0, 0.5);       /* subtle depth shadow */
 }
 .project-details:hover {
   animation: wobble 0.5s ease-in-out;
@@ -294,7 +246,7 @@ h2 {
 .project-name {
   display: flex;
   font-size: 20px;
-  color:black;
+  color:#1B1B1B;
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -302,10 +254,6 @@ h2 {
   /* Required for z-index to work */
   position: relative;
   z-index: 1000; 
-  /* Text Shadow */
-  text-shadow: 
-    2px 2px 4px rgba(255, 255, 255, 0.4),   /* soft outer glow */
-    -1px -1px 2px rgba(0, 0, 0, 0.5);       /* subtle depth shadow */
 }
 .project-name:hover {
   cursor: pointer;
@@ -313,8 +261,8 @@ h2 {
   color: red;
   text-decoration: underline;
   text-decoration-color: red; 
-  text-decoration-thickness: 5px;
-  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
 }
 /* Default hamburger is hidden */
 .hamburger {
@@ -338,10 +286,6 @@ h2 {
     padding: 15px 20px;
     margin: 0;
   }
-  .bi-bi-globe {
-    top: 370px !important;
-    right: 160px !important;
-  }
 }
 /* On screens above 1024px, show normally and hide hamburger */
 @media (min-width: 1024px) {
@@ -358,14 +302,6 @@ h2 {
   }
   .projects {
     font-size: 20px;
-  }
-  .bi-bi-globe {
-    bottom: -150px !important;
-    right: 380px;
-  }
-  .bi-bi-pc-display-horizontal {
-    left: -100px;
-    top: -50px !important; 
   }
   .project-body {
     padding: 5px 10px;
@@ -399,7 +335,7 @@ h2 {
     display: flex;
     font-size: 25px;
     margin-right: 60px;
-    margin-top: 110px !important;
+    margin-top: 70px !important;
   }
   .footer {
     font-size: 25px;
@@ -453,7 +389,7 @@ h2 {
     display: flex;
     font-size: 25px;
     margin-right: 20px;
-    margin-top: 100px !important;
+    margin-top: 70px !important;
   }
   .footer {
     font-size: 25px;
@@ -469,11 +405,12 @@ h2 {
   }
   .project-body {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap; /* allows wrapping to next row */
     padding: 30px;
     gap: 20px; /* optional: spacing between containers */
-    justify-content: center; /* optional: center content */
-    flex-direction: column;
+    width: 95%;
+    margin-left: 20px;
   }
 }
 /* iPad Air (820px width) */
@@ -503,12 +440,9 @@ h2 {
     margin-left: 5px;
     width: 98%;
   }
-  .bi-bi-pc-display-horizontal {
-    top: 480px !important;
-    margin-left: 550px;
-  }
-  .bi-bi-globe {
-    right: 180px;
+  .fw-bold {
+    text-shadow: none;
+    font-weight: 400;
   }
 }
 /* iPad 6th Gen - Portrait 768 x 1024*/
@@ -627,17 +561,16 @@ h2 {
   .project-body {
     width: 95%;
   }
+  .projects {
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+  .project-container {
+    padding: 20px;
+    padding-bottom: 0;
+  }
   .projects, .project-name, .fw-bold {
     font-size: 18px !important;
-  }
-  .bi-bi-globe {
-    top: 820px !important;
-    right: -170px;
-  }
-  .bi-bi-pc-display-horizontal {
-    left: 5px;
-    margin-left: 0;
-    top: 110px !important;
   }
 }
 /* 📱 iPhone 12 Pro */
@@ -651,22 +584,18 @@ h2 {
   }
   .project-body {
     width: 95%;
-    margin-top: 30px;
+    margin-top: -10px;
   }
   .projects {
     margin-top: -20px;
+    margin-bottom: 0;
+  }
+  .project-container {
+    padding: 20px;
+    padding-bottom: 0;
   }
   .projects, .project-name, .fw-bold {
     font-size: 18px !important;
-  }
-  .bi-bi-globe {
-    top: 820px !important;
-    right: -170px;
-  }
-  .bi-bi-pc-display-horizontal {
-    left: 5px;
-    margin-left: 0;
-    top: 110px !important;
   }
 }
 /* Responsive Styles for Tablets (≤ 400px) */
@@ -746,18 +675,18 @@ h2 {
   }
   .project-body {
     width: 95%;
+    margin-top: -10px;
+  }
+  .projects {
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+  .project-container {
+    padding: 20px;
+    padding-bottom: 0;
   }
   .projects, .project-name, .fw-bold {
     font-size: 18px !important;
-  }
-  .bi-bi-globe {
-    top: 820px !important;
-    right: -170px;
-  }
-  .bi-bi-pc-display-horizontal {
-    left: 5px;
-    margin-left: 0;
-    top: 110px !important;
   }
 }
 /* Responsive Styles for Tablets (≤ 320px) */
@@ -768,8 +697,5 @@ h2 {
   .project-name, .fw-bold {
     font-size: 16px !important;
     padding: -20px;
-  }
-  .bi-bi-laptop {
-    right: -170px !important;
   }
 }
