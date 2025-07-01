@@ -279,7 +279,7 @@ html, body {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
@@ -337,7 +337,7 @@ html, body {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
@@ -433,6 +433,9 @@ html, body {
   .top-lines {
     margin-top: 95px;
   }
+  .text-a {
+    margin-left: 21.5px !important;
+  }
 }
 /* iPad 6th Gen - Landscape */
 @media only screen 
@@ -440,9 +443,7 @@ html, body {
   and (max-device-width: 768px) 
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .text-a {
-    margin-left: 21.5px !important;
-  }
+  
 }
 /* On screens above 440px, show normally and hide hamburger */
 @media (min-width: 440px) {
