@@ -431,7 +431,7 @@ html, body {
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
   .top-lines {
-    margin-top: 85px;
+    margin-top: 85px !important;
   }
   .text-a {
     margin-left: 21.5px !important;
