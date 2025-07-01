@@ -228,7 +228,7 @@ html, body {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
@@ -284,7 +284,7 @@ html, body {
     display: flex !important;
     justify-content: flex-end !important;
     align-items:flex-start;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 60px;
   }
   .name {
