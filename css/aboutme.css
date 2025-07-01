@@ -367,6 +367,7 @@ html, body {
   and (-webkit-min-device-pixel-ratio: 2) {
   .text-a {
     margin-left: 21.5px !important;
+    margin-top: 70px !important;
   }
 }
 /* iPad 6th Gen - Landscape */
