@@ -1,7 +1,7 @@
 import { disableImageDragging, blockDevToolsShortcuts, setupHamburgerToggle } from '../utils/shared.js';
 
 disableImageDragging();
-blockDevToolsShortcuts();
+// blockDevToolsShortcuts();
 setupHamburgerToggle();
 
 // Constants for durations

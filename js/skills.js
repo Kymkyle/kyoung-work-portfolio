@@ -1,6 +1,6 @@
 import { disableImageDragging, blockDevToolsShortcuts, setupHamburgerToggle, handlePreloader } from '../utils/shared.js';
 
 disableImageDragging();
-blockDevToolsShortcuts();
+// blockDevToolsShortcuts();
 handlePreloader();
 setupHamburgerToggle();

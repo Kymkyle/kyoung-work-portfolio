@@ -1,7 +1,7 @@
 import { disableImageDragging, blockDevToolsShortcuts, setupHamburgerToggle } from '../utils/shared.js';
 
 disableImageDragging();
-blockDevToolsShortcuts();
+// blockDevToolsShortcuts();
 setupHamburgerToggle();
 
 const PRELOADER_FADE_DURATION = 3000;
